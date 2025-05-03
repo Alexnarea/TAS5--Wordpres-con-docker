@@ -6,6 +6,35 @@ Despliegue de un Sitio WordPress con Contenedores Docker Usando Comandos CLI
 El tiempo fue de 120 minutos. 
 ## 3. Fundamentos:
 
+## Contenedor Docker 
+
+Un contenedor de Docker es un entorno de ejecución que tiene todos los componentes necesarios (como el código, las dependencias y las bibliotecas) para ejecutar el código de la aplicación sin utilizar las dependencias de la máquina host. Este tiempo de ejecución del contenedor se ejecuta en el motor de un servidor, una máquina o una instancia en la nube. El motor ejecuta varios contenedores en función de los recursos subyacentes disponibles(Imagen de Docker y Contenedor: Diferencia Entre Tecnologías de Implementación de Aplicaciones - AWS, n.d.). 
+
+
+- Estándar: Docker creó el estándar de la industria para contenedores, para que pudieran ser portátiles en cualquier lugar
+- Ligero: los contenedores comparten el núcleo del sistema operativo de la máquina y, por lo tanto, no requieren un sistema operativo por aplicación, lo que impulsa una mayor eficiencia del servidor y reduce los costos de servidor y licencias.
+- Seguro: las aplicaciones son más seguras en contenedores y Docker proporciona las capacidades de aislamiento predeterminadas más sólidas de la industria.
+
+<img src="./docker-img/contenedor.png" alt="drawing0" width="500"/>
+
+## Volumenes Docker 
+
+Los volúmenes son almacenes de datos persistentes para contenedores, creados y administrados por Docker. Puedes crear un volumen específicamente con el docker volume createcomando, o Docker puede crearlo durante la creación del contenedor o servicio. Al crear un volumen, este se almacena en un directorio del host de Docker. Al montarlo en un contenedor, este directorio es el que se monta en el contenedor. Esto es similar al funcionamiento de los montajes de enlace, salvo que Docker administra los volúmenes y los pasillos de la funcionalidad principal del host (Volúmenes | Documentación de Docker, n.d.).
+
+## Cuando utilizar volumenes
+
+Los volúmenes son el mecanismo preferido para la persistencia de los datos generados y utilizados por los contenedores Docker. Si bien los montajes de enlace dependen de la estructura de directorios y del sistema operativo del equipo host, Docker gestiona completamente los volúmenes. Los siguientes volúmenes son una buena opción para los casos de uso:
+
+- Es más fácil realizar copias de seguridad o migrar volúmenes que montajes enlazados.
+- Puede administrar volúmenes mediante los comandos CLI de Docker o la API de Docker.
+- Los volúmenes funcionan tanto en contenedores Linux como Windows.
+- Los volúmenes se pueden compartir de forma más segura entre varios contenedores.
+- Los nuevos volúmenes pueden tener su contenido rellenado previamente por un contenedor o una compilación.
+- Cuando su aplicación requiere E/S de alto rendimiento.
+
+
+<img src="./volumenes/volumen.png" alt="drawing0" width="500"/>
+
 ## Redes Docker 
 
 Las redes Docker configuran las comunicaciones entre contenedores vecinos y servicios externos. Los contenedores deben estar conectados a una red Docker para recibir conectividad de red. Las rutas de comunicación disponibles para el contenedor dependen de sus conexiones de red (Docker Networking - Basics, Network Types & Examples, n.d.).
@@ -29,6 +58,10 @@ Sin una interfaz de usuario, solo se puede interactuar con MySQL mediante la Ter
 
 
 <img src="./redes-container/php.png" alt="drawing0" width="500"/>
+
+## Wordpress 
+
+WordPress es la herramienta de creación de sitios web líder en todo el mundo, impulsando más de la mitad del contenido en internet. Este sistema de gestión de contenidos (CMS) de código abierto es versátil y fácil de usar, lo que lo convierte en una opción ideal para usuarios de todos los niveles (¿Qué Es WordPress? Características, Funcionamiento y Ejemplos., n.d.). 
 
 ## 4. Conocimientos previos.
    
