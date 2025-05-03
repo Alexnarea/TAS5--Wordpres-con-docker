@@ -63,6 +63,14 @@ Sin una interfaz de usuario, solo se puede interactuar con MySQL mediante la Ter
 
 WordPress es la herramienta de creación de sitios web líder en todo el mundo, impulsando más de la mitad del contenido en internet. Este sistema de gestión de contenidos (CMS) de código abierto es versátil y fácil de usar, lo que lo convierte en una opción ideal para usuarios de todos los niveles (¿Qué Es WordPress? Características, Funcionamiento y Ejemplos., n.d.). 
 
+WordPress llegó para democratizar la web, como otros CMS. Desde el año 2003, es un sistema de gestión de contenidos que hace que la creación de contenido web no dependa sólo de programadores y de personas de alto conocimiento técnico. Ahora, cualquier persona puede crear una web (¿Qué Es WordPress, Para Qué Sirve y Cómo Funciona?, n.d.).
+
+WordPress se divide en tres partes:
+
+Core: WordPress en sí, que es absolutamente gratuito y descargable.
+Temas: que sirven para cambiar la apariencia de la web. Hay un enorme repositorio gratuito, pero también hay recursos de pago fuera del repositorio.
+Plugins: utilidades que pueden convertir tu web en casi cualquier cosa. Igualmente que los temas, hay un repositorio gratuito y miles de empresas que venden sus funcionalidades.
+
 ## 4. Conocimientos previos.
    
 Para realizar esta practica el estudiante necesita tener claro los siguientes temas:
