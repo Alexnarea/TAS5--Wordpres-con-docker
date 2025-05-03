@@ -113,7 +113,7 @@ Para realizar esta practica el estudiante necesita tener claro los siguientes te
 
 Figura 8-1 Creación de la red personalizada 
 
-<img src="./docker-w/d1.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/d1.PNG" alt="drawing0" width="800"/>
 
 2. Crear un volumen para wordpress.
 3. Crear un volumen para mysql.
@@ -121,27 +121,27 @@ Figura 8-1 Creación de la red personalizada
 
 Figura 8-2 Creacion de los volumenes para wordpress y mysql.
 
-<img src="./docker-w/d2.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/d2.PNG" alt="drawing0" width="800"/>
 
 
 4. Crear un contenedor para mysql.
    
 Figura 8-3 Creacion del contenedor para mysql.
 
-<img src="./docker-w/sql.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/sql.PNG" alt="drawing0" width="800"/>
 
 5. Crear un contenedor para phpmyadmin.
 
 Figura 8-5 Figura 8-3 Creacion del contenedor para phpmyadmin.
 
 
-<img src="./docker-w/d4.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/d4.PNG" alt="drawing0" width="800"/>
 
 6. Crear un contenedor para wordpress.
 
 Figura 8-5 Figura 8-3 Creacion del contenedor para wordpress.
 
-<img src="./docker-w/word.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/word.PNG" alt="drawing0" width="800"/>
 
 
 ## 9. Resultados esperados:
@@ -150,8 +150,8 @@ Al finalizar la práctica, se logró cumplir exitosamente los objetivos plantead
 
 Desde phpMyAdmin, accedido a través del navegador en el puerto 8081, se pudo gestionar el servidor MySQL y crear de forma gráfica una base de datos de prueba, verificando así la conectividad y funcionamiento del sistema. Durante el proceso se aplicaron comandos esenciales de Docker como ``docker network create``, ``docker network connect``, y se comprendió la importancia de las variables de entorno para la configuración de servicios. Todo el desarrollo de la práctica fue documentado con capturas de pantalla que evidencian la creación de la red, el despliegue de los contenedores, la configuración de acceso y la creación exitosa de una base de datos de prueba desde phpMyAdmin.
 
-<img src="./docker-w/resultados.PNG" alt="drawing0" width="500"/>
-<img src="./docker-w/resultadosU.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/resultado.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/resultadoU.PNG" alt="drawing0" width="500"/>
 
 
 
