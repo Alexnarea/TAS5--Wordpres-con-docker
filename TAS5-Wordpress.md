@@ -150,7 +150,11 @@ Al finalizar la práctica, se logró cumplir exitosamente los objetivos plantead
 
 Desde phpMyAdmin, accedido a través del navegador en el puerto 8081, se pudo gestionar el servidor MySQL y crear de forma gráfica una base de datos de prueba, verificando así la conectividad y funcionamiento del sistema. Durante el proceso se aplicaron comandos esenciales de Docker como ``docker network create``, ``docker network connect``, y se comprendió la importancia de las variables de entorno para la configuración de servicios. Todo el desarrollo de la práctica fue documentado con capturas de pantalla que evidencian la creación de la red, el despliegue de los contenedores, la configuración de acceso y la creación exitosa de una base de datos de prueba desde phpMyAdmin.
 
+
+<img src="./docker-w/diagrama.png" alt="drawing0" width="500"/>
+
 <img src="./docker-w/resultado.PNG" alt="drawing0" width="500"/>
+
 <img src="./docker-w/resultadoU.PNG" alt="drawing0" width="500"/>
 
 
