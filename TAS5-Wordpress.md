@@ -33,7 +33,7 @@ Los volúmenes son el mecanismo preferido para la persistencia de los datos gene
 - Cuando su aplicación requiere E/S de alto rendimiento.
 
 
-<img src="./volumenes/volumen.png" alt="drawing0" width="500"/>
+<img src="./docker-w/volumen.png" alt="drawing0" width="500"/>
 
 ## Redes Docker 
 
@@ -41,7 +41,7 @@ Las redes Docker configuran las comunicaciones entre contenedores vecinos y serv
 
 La red de contenedores se refiere a la capacidad de los contenedores de conectarse y comunicarse entre sí o con cargas de trabajo que no sean Docker. Los contenedores tienen la red habilitada por defecto y pueden realizar conexiones salientes. Un contenedor no tiene información sobre el tipo de red al que está conectado ni si sus pares también son cargas de trabajo de Docker. Un contenedor solo ve una interfaz de red con una dirección IP, una puerta de enlace, una tabla de enrutamiento, servicios DNS y otros detalles de red. Esto es así, a menos que el contenedor utilice el nonecontrolador de red (Redes | Documentación de Docker, n.d.).
 
-<img src="./redes-container/redes.png" alt="drawing0" width="500"/>
+<img src="./docker-w/redes.png" alt="drawing0" width="500"/>
 
 ## MySQL 
 
@@ -50,14 +50,14 @@ La forma tradicional de ejecutar una base de datos MySQL es instalar los paquete
 En un contenedor, piense en MySQL como una sola unidad que solo sirve contenido relacionado con MySQL en el puerto 3306. La mayor parte de las operaciones se realizan en este único canal. Docker funciona de maravilla empaquetando su aplicación/software en una sola unidad, que luego puede implementar en cualquier lugar siempre que el motor Docker esté instalado. Espera que el paquete o la imagen se ejecute como un único proceso por contenedor. Con Docker, el flujo sería que usted (o alguien más) cree una imagen de MySQL con una versión y un proveedor específicos, la empaquete y la distribuya a cualquiera que desee ejecutar una instancia de MySQL rápidamente (Contenedores Docker de MySQL: Conceptos Básicos | Variousnines, n.d.).
 
 
-<img src="./redes-container/sql.png" alt="drawing0" width="500"/>
+<img src="./docker-w/sq.png" alt="drawing0" width="500"/>
 
 ## PhpMyAdmin
 
 Sin una interfaz de usuario, solo se puede interactuar con MySQL mediante la Terminal (o PowerShell y el Símbolo del sistema, según el sistema operativo). phpMyAdmin soluciona este problema al ser una aplicación web portátil de código abierto que actúa como herramienta de administración para MySQL. Una alternativa sería MySQL Workbench , pero requiere instalación en el equipo local y anula el propósito de usar Docker. Docker es una herramienta que empaqueta software en contenedores, independientemente del sistema local. Docker se utilizó para ejecutar MySQL y phpMyAdmin en el equipo local sin necesidad de instalación, y puede usarse para empaquetar toda la configuración en el futuro (MySQL y PhpMyAdmin En Docker - Ciencia de Datos de Pila Completa, n.d.).
 
 
-<img src="./redes-container/php.png" alt="drawing0" width="500"/>
+<img src="./docker-w/php.png" alt="drawing0" width="500"/>
 
 ## Wordpress 
 
@@ -70,6 +70,9 @@ WordPress se divide en tres partes:
 Core: WordPress en sí, que es absolutamente gratuito y descargable.
 Temas: que sirven para cambiar la apariencia de la web. Hay un enorme repositorio gratuito, pero también hay recursos de pago fuera del repositorio.
 Plugins: utilidades que pueden convertir tu web en casi cualquier cosa. Igualmente que los temas, hay un repositorio gratuito y miles de empresas que venden sus funcionalidades.
+
+<img src="./docker-w/wordpress.png" alt="drawing0" width="500"/>
+
 
 ## 4. Conocimientos previos.
    
