@@ -15,7 +15,7 @@ Un contenedor de Docker es un entorno de ejecución que tiene todos los componen
 - Ligero: los contenedores comparten el núcleo del sistema operativo de la máquina y, por lo tanto, no requieren un sistema operativo por aplicación, lo que impulsa una mayor eficiencia del servidor y reduce los costos de servidor y licencias.
 - Seguro: las aplicaciones son más seguras en contenedores y Docker proporciona las capacidades de aislamiento predeterminadas más sólidas de la industria.
 
-<img src="./docker-img/contenedor.png" alt="drawing0" width="500"/>
+<img src="./docker-w/contenedor.png" alt="drawing0" width="500"/>
 
 ## Volumenes Docker 
 
