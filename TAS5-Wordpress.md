@@ -15,7 +15,7 @@ Un contenedor de Docker es un entorno de ejecución que tiene todos los componen
 - Ligero: los contenedores comparten el núcleo del sistema operativo de la máquina y, por lo tanto, no requieren un sistema operativo por aplicación, lo que impulsa una mayor eficiencia del servidor y reduce los costos de servidor y licencias.
 - Seguro: las aplicaciones son más seguras en contenedores y Docker proporciona las capacidades de aislamiento predeterminadas más sólidas de la industria.
 
-<img src="./docker-img/contenedor.png" alt="drawing0" width="500"/>
+<img src="./docker-w/contenedor.png" alt="drawing0" width="500"/>
 
 ## Volumenes Docker 
 
@@ -33,7 +33,7 @@ Los volúmenes son el mecanismo preferido para la persistencia de los datos gene
 - Cuando su aplicación requiere E/S de alto rendimiento.
 
 
-<img src="./volumenes/volumen.png" alt="drawing0" width="500"/>
+<img src="./docker-w/volumen.png" alt="drawing0" width="500"/>
 
 ## Redes Docker 
 
@@ -41,7 +41,7 @@ Las redes Docker configuran las comunicaciones entre contenedores vecinos y serv
 
 La red de contenedores se refiere a la capacidad de los contenedores de conectarse y comunicarse entre sí o con cargas de trabajo que no sean Docker. Los contenedores tienen la red habilitada por defecto y pueden realizar conexiones salientes. Un contenedor no tiene información sobre el tipo de red al que está conectado ni si sus pares también son cargas de trabajo de Docker. Un contenedor solo ve una interfaz de red con una dirección IP, una puerta de enlace, una tabla de enrutamiento, servicios DNS y otros detalles de red. Esto es así, a menos que el contenedor utilice el nonecontrolador de red (Redes | Documentación de Docker, n.d.).
 
-<img src="./redes-container/redes.png" alt="drawing0" width="500"/>
+<img src="./docker-w/redes.png" alt="drawing0" width="500"/>
 
 ## MySQL 
 
@@ -50,14 +50,14 @@ La forma tradicional de ejecutar una base de datos MySQL es instalar los paquete
 En un contenedor, piense en MySQL como una sola unidad que solo sirve contenido relacionado con MySQL en el puerto 3306. La mayor parte de las operaciones se realizan en este único canal. Docker funciona de maravilla empaquetando su aplicación/software en una sola unidad, que luego puede implementar en cualquier lugar siempre que el motor Docker esté instalado. Espera que el paquete o la imagen se ejecute como un único proceso por contenedor. Con Docker, el flujo sería que usted (o alguien más) cree una imagen de MySQL con una versión y un proveedor específicos, la empaquete y la distribuya a cualquiera que desee ejecutar una instancia de MySQL rápidamente (Contenedores Docker de MySQL: Conceptos Básicos | Variousnines, n.d.).
 
 
-<img src="./redes-container/sql.png" alt="drawing0" width="500"/>
+<img src="./docker-w/sq.png" alt="drawing0" width="500"/>
 
 ## PhpMyAdmin
 
 Sin una interfaz de usuario, solo se puede interactuar con MySQL mediante la Terminal (o PowerShell y el Símbolo del sistema, según el sistema operativo). phpMyAdmin soluciona este problema al ser una aplicación web portátil de código abierto que actúa como herramienta de administración para MySQL. Una alternativa sería MySQL Workbench , pero requiere instalación en el equipo local y anula el propósito de usar Docker. Docker es una herramienta que empaqueta software en contenedores, independientemente del sistema local. Docker se utilizó para ejecutar MySQL y phpMyAdmin en el equipo local sin necesidad de instalación, y puede usarse para empaquetar toda la configuración en el futuro (MySQL y PhpMyAdmin En Docker - Ciencia de Datos de Pila Completa, n.d.).
 
 
-<img src="./redes-container/php.png" alt="drawing0" width="500"/>
+<img src="./docker-w/php.png" alt="drawing0" width="500"/>
 
 ## Wordpress 
 
@@ -70,6 +70,9 @@ WordPress se divide en tres partes:
 Core: WordPress en sí, que es absolutamente gratuito y descargable.
 Temas: que sirven para cambiar la apariencia de la web. Hay un enorme repositorio gratuito, pero también hay recursos de pago fuera del repositorio.
 Plugins: utilidades que pueden convertir tu web en casi cualquier cosa. Igualmente que los temas, hay un repositorio gratuito y miles de empresas que venden sus funcionalidades.
+
+<img src="./docker-w/wordpress.png" alt="drawing0" width="500"/>
+
 
 ## 4. Conocimientos previos.
    
@@ -110,29 +113,35 @@ Para realizar esta practica el estudiante necesita tener claro los siguientes te
 
 Figura 8-1 Creación de la red personalizada 
 
-<img src="./redes-container/r1.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/d1.PNG" alt="drawing0" width="800"/>
 
 2. Crear un volumen para wordpress.
 3. Crear un volumen para mysql.
 
 
-Figura 8-3 Creacion de los volumenes para wordpress y mysql.
+Figura 8-2 Creacion de los volumenes para wordpress y mysql.
 
-<img src="./redes-container/r3.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/d2.PNG" alt="drawing0" width="800"/>
 
 
 4. Crear un contenedor para mysql.
    
-Figura 8-4 Creacion del contenedor para mysql.
+Figura 8-3 Creacion del contenedor para mysql.
 
-<img src="./redes-container/r4.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/sql.PNG" alt="drawing0" width="800"/>
 
 5. Crear un contenedor para phpmyadmin.
 
-Figura 8-5 Configuracion y creacion de la base de datos en la interfaz de phpMyAdmin.
+Figura 8-4 Figura 8-3 Creacion del contenedor para phpmyadmin.
 
 
-<img src="./redes-container/r5.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/d4.PNG" alt="drawing0" width="800"/>
+
+6. Crear un contenedor para wordpress.
+
+Figura 8-5 Figura 8-3 Creacion del contenedor para wordpress.
+
+<img src="./docker-w/word.PNG" alt="drawing0" width="800"/>
 
 
 ## 9. Resultados esperados:
@@ -141,14 +150,21 @@ Al finalizar la práctica, se logró cumplir exitosamente los objetivos plantead
 
 Desde phpMyAdmin, accedido a través del navegador en el puerto 8081, se pudo gestionar el servidor MySQL y crear de forma gráfica una base de datos de prueba, verificando así la conectividad y funcionamiento del sistema. Durante el proceso se aplicaron comandos esenciales de Docker como ``docker network create``, ``docker network connect``, y se comprendió la importancia de las variables de entorno para la configuración de servicios. Todo el desarrollo de la práctica fue documentado con capturas de pantalla que evidencian la creación de la red, el despliegue de los contenedores, la configuración de acceso y la creación exitosa de una base de datos de prueba desde phpMyAdmin.
 
-<img src="./redes-container/resultado.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/resultado.PNG" alt="drawing0" width="500"/>
+<img src="./docker-w/resultadoU.PNG" alt="drawing0" width="500"/>
+
 
 
 ## 10. Bibliografía
     
-- Contenedores Docker de MySQL: Conceptos básicos | Variousnines. (n.d.). Retrieved April 25, 2025, from https://severalnines.com/blog/mysql-docker-containers-understanding-basics/
-- Docker Networking - Basics, Network Types & Examples. (n.d.). Retrieved April 25, 2025, from https://spacelift.io/blog/docker-networking
-- MySQL y phpMyAdmin en Docker - Ciencia de datos de pila completa. (n.d.). Retrieved April 25, 2025, from https://andrewyewcy.com/MySQL-and-phpMyAdmin-on-Docker/
-- Redes | Documentación de Docker. (n.d.). Retrieved April 25, 2025, from https://docs.docker.com/engine/network/
+- Docker. (n.d.). What is a container? Retrieved April 10, 2025, from https://www.docker.com/resources/what-container/
+- Docker. (n.d.). Networks | Docker Documentation. Retrieved April 25, 2025, from https://docs.docker.com/engine/network/
+- Docker. (n.d.). Volumes | Docker Documentation. Retrieved April 17, 2025, from https://docs-docker-com.translate.goog/engine/storage/volumes/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
+- Hostinger. (n.d.). What is WordPress? Features, how it works, and examples. Retrieved May 2, 2025, from https://www.hostinger.com/es/tutoriales/que-es-wordpress
+- Instituto Cajasol. (n.d.). What is WordPress, what is it for, and how does it work? Retrieved May 2, 2025, from https://institutocajasol.com/que-es-wordpress-y-como-funciona/
+- Spacelift. (n.d.). Docker networking: Basics, network types & examples. Retrieved April 25, 2025, from https://spacelift.io/blog/docker-networking
+- Variousnines. (n.d.). MySQL Docker containers: Understanding the basics. Retrieved April 25, 2025, from https://severalnines.com/blog/mysql-docker-containers-understanding-basics/
+- Yewcy, A. (n.d.). MySQL and phpMyAdmin on Docker – Full stack data science. Retrieved April 25, 2025, from https://andrewyewcy.com/MySQL-and-phpMyAdmin-on-Docker/
+ 
 
 
