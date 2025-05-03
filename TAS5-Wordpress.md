@@ -157,9 +157,14 @@ Desde phpMyAdmin, accedido a través del navegador en el puerto 8081, se pudo ge
 
 ## 10. Bibliografía
     
-- Contenedores Docker de MySQL: Conceptos básicos | Variousnines. (n.d.). Retrieved April 25, 2025, from https://severalnines.com/blog/mysql-docker-containers-understanding-basics/
-- Docker Networking - Basics, Network Types & Examples. (n.d.). Retrieved April 25, 2025, from https://spacelift.io/blog/docker-networking
-- MySQL y phpMyAdmin en Docker - Ciencia de datos de pila completa. (n.d.). Retrieved April 25, 2025, from https://andrewyewcy.com/MySQL-and-phpMyAdmin-on-Docker/
-- Redes | Documentación de Docker. (n.d.). Retrieved April 25, 2025, from https://docs.docker.com/engine/network/
+- Docker. (n.d.). What is a container? Retrieved April 10, 2025, from https://www.docker.com/resources/what-container/
+- Docker. (n.d.). Networks | Docker Documentation. Retrieved April 25, 2025, from https://docs.docker.com/engine/network/
+- Docker. (n.d.). Volumes | Docker Documentation. Retrieved April 17, 2025, from https://docs-docker-com.translate.goog/engine/storage/volumes/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
+- Hostinger. (n.d.). What is WordPress? Features, how it works, and examples. Retrieved May 2, 2025, from https://www.hostinger.com/es/tutoriales/que-es-wordpress
+- Instituto Cajasol. (n.d.). What is WordPress, what is it for, and how does it work? Retrieved May 2, 2025, from https://institutocajasol.com/que-es-wordpress-y-como-funciona/
+- Spacelift. (n.d.). Docker networking: Basics, network types & examples. Retrieved April 25, 2025, from https://spacelift.io/blog/docker-networking
+- Variousnines. (n.d.). MySQL Docker containers: Understanding the basics. Retrieved April 25, 2025, from https://severalnines.com/blog/mysql-docker-containers-understanding-basics/
+- Yewcy, A. (n.d.). MySQL and phpMyAdmin on Docker – Full stack data science. Retrieved April 25, 2025, from https://andrewyewcy.com/MySQL-and-phpMyAdmin-on-Docker/
+ 
 
 
