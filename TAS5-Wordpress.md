@@ -132,7 +132,7 @@ Figura 8-3 Creacion del contenedor para mysql.
 
 5. Crear un contenedor para phpmyadmin.
 
-Figura 8-5 Figura 8-3 Creacion del contenedor para phpmyadmin.
+Figura 8-4 Figura 8-3 Creacion del contenedor para phpmyadmin.
 
 
 <img src="./docker-w/d4.PNG" alt="drawing0" width="800"/>
